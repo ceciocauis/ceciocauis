@@ -1,0 +1,38 @@
+** sch_path: /home/jhon/Documents/xschem/BW_tb.sch
+**.subckt BW_tb out in vdd
+*.opin out
+*.opin in
+*.opin vdd
+V2 net1 GND 1 AC 1
+
+
+x1 in out GND vdd Padtest
+
+
+V1 vdd GND 1.8
+C1 out GND 20p m=1
+R1 net1 in 50 m=1
+R2 out GND 50 m=1
+**** begin user architecture code
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.control
+set filetype=ascii
+set format=vector
+ac dec 1000 1 310Meg
+plot db(v(out))
+meas ac f0 when v(out)=0.7079
+
+
+*wrdata out_Padtest_9x10_12di.txt db(out)
+.endc
+
+**** end user architecture code
+**.ends
+
+.include Padtest_9x10_12di.spice
+
+.GLOBAL GND
+.end

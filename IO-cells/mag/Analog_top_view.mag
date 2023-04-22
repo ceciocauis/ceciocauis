@@ -1,0 +1,84 @@
+magic
+tech sky130A
+timestamp 1681049286
+use Cut_1um  Cut_1um_0
+timestamp 1679140781
+transform 1 0 28600 0 1 -57900
+box 28300 16100 28400 36100
+use Cut_5um  Cut_5um_0
+timestamp 1679140823
+transform 1 0 29300 0 1 -57900
+box 28300 16100 28800 36100
+use Cut_10um  Cut_10um_0
+timestamp 1679140865
+transform 1 0 30400 0 1 -57900
+box 28300 16100 29300 36100
+use Cut_20um  Cut_20um_0
+timestamp 1679141029
+transform 1 0 32000 0 1 -57900
+box 28300 16100 30300 36100
+use Filler_1um  Filler_1um_0
+timestamp 1679140278
+transform 1 0 28600 0 1 -29100
+box 28300 16100 28400 36100
+use Filler_5um  Filler_5um_0
+timestamp 1679140388
+transform 1 0 29300 0 1 -29100
+box 28300 16100 28800 36100
+use Filler_10um  Filler_10um_0
+timestamp 1679140451
+transform 1 0 30400 0 1 -29100
+box 28300 16100 29300 36100
+use Filler_20um  Filler_20um_0
+timestamp 1679140496
+transform 1 0 32000 0 1 -29100
+box 28300 16100 30300 36100
+use SigPad_3x4_2di  SigPad_3x4_2di_0
+timestamp 1679065267
+transform 1 0 -16000 0 1 -10000
+box 18000 10000 25500 30000
+use SigPad_3x4_4di  SigPad_3x4_4di_0
+timestamp 1679069139
+transform 1 0 -2000 0 1 -10000
+box 18000 10000 25500 30000
+use SigPad_3x4_6di  SigPad_3x4_6di_0
+timestamp 1681046150
+transform 1 0 12000 0 1 -10000
+box 18000 10000 25500 30000
+use SigPad_3x4_12di  SigPad_3x4_12di_0
+timestamp 1679025881
+transform 1 0 26000 0 1 -10000
+box 18000 10000 25500 30000
+use SigPad_6x7_2di  SigPad_6x7_2di_0
+timestamp 1679064228
+transform 1 0 -16000 0 1 -37000
+box 18000 10000 25500 30000
+use SigPad_6x7_4di  SigPad_6x7_4di_0
+timestamp 1679052337
+transform 1 0 -2000 0 1 -37000
+box 18000 10000 25500 30000
+use SigPad_6x7_6di  SigPad_6x7_6di_0
+timestamp 1681048457
+transform 1 0 12000 0 1 -37000
+box 18000 10000 25500 30000
+use SigPad_6x7_12di  SigPad_6x7_12di_0
+timestamp 1679092491
+transform 1 0 26000 0 1 -37000
+box 18000 10000 25500 30000
+use SigPad_9x10_2di  SigPad_9x10_2di_0
+timestamp 1679056719
+transform 1 0 -16000 0 1 -64000
+box 18000 10000 25500 30000
+use SigPad_9x10_4di  SigPad_9x10_4di_0
+timestamp 1679092749
+transform 1 0 -2000 0 1 -64000
+box 18000 10000 25500 30000
+use SigPad_9x10_6di  SigPad_9x10_6di_0
+timestamp 1681049173
+transform 1 0 12000 0 1 -64000
+box 18000 10000 25500 30000
+use SigPad_9x10_12di  SigPad_9x10_12di_0
+timestamp 1679068252
+transform 1 0 26000 0 1 -64000
+box 18000 10000 25500 30000
+<< end >>

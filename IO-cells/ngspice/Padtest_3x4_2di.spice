@@ -1,0 +1,64 @@
+* NGSPICE file created from Padtest.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_generic_m5_SYR7BF m5_n1000000_200# m5_n1000000_n257# m5_n1000000_n200#
++ SUB
+R0 m5_n1000000_n257# m5_n1000000_200# sky130_fd_pr__res_generic_m5 w=10k w=2
+C0 m5_n1000000_n257# SUB 406.53fF
+C1 m5_n1000000_n200# SUB 126.56fF
+C2 m5_n1000000_200# SUB 406.53fF
+.ends
+
+.subckt SigPad_3x4_2di vdd vss in
+D0 in vdd sky130_fd_pr__diode_pd2nw_05v5 pj=1.4e+07 area=1.2e+13
+D1 vss in sky130_fd_pr__diode_pw2nd_05v5 pj=1.4e+07 area=1.2e+13
+C0 in vdd 335.12fF
+C1 in vss 563.04fF
+C2 vdd vss 914.54fF
+.ends
+
+.subckt Padtest in out vss vdd
+XR1 in out R1/m5_n1000000_n200# vss sky130_fd_pr__res_generic_m5_SYR7BF
+XSigPad_3x4_2di_0 vdd vss out SigPad_3x4_2di
+R0 out.t0 out 1.574
+R1 out.t0 out.t1 0.068
+R2 out out.t0 0.004
+R3 vdd.n0 vdd 0.027
+R4 vdd.n0 vdd 0.023
+R5 vdd vdd.n0 0.012
+R6 vss.n0 vss.n12 8.187
+R7 vss.n14 vss.n13 5.835
+R8 vss.n16 vss.n15 2.474
+R9 vss.n0 vss.n14 1.28
+R10 vss.n15 vss.n0 1.066
+R11 vss.n9 vss.n7 0.137
+R12 vss.n9 vss.n8 0.129
+R13 vss.n3 vss 0.082
+R14 vss.n10 vss.n9 0.083
+R15 vss.n11 vss.n10 0.05
+R16 vss.n20 vss.n19 0.015
+R17 vss vss.n20 0.014
+R18 vss.n3 vss 0.012
+R19 vss.n18 vss.n2 0.012
+R20 vss.n6 vss.n5 0.004
+R21 vss.n4 vss.n3 0.004
+R22 vss.n20 vss.n18 0.003
+R23 vss.n17 vss.n16 0.003
+R24 vss.n11 vss.n6 0.001
+R25 vss.n16 vss.n11 0.001
+R26 vss.n5 vss.n4 0.001
+R27 vss.n2 vss.n1 0.001
+R28 vss.n18 vss.n17 0.001
+C0 R1/m5_n1000000_n200# out 2.13fF
+C1 out in 1.47fF
+C2 vdd out -1.71fF
+C3 vdd R1/m5_n1000000_n200# 12.62fF
+C4 vdd in 13.34fF
+C5 vdd.n0 vss 939.08fF $ **FLOATING
+C6 out.t1 vss 354.70fF
+C7 out.t0 vss 609.36fF
+C8 out vss 1283.62fF
+C9 vdd vss 1249.37fF
+C10 R1/m5_n1000000_n200# vss 139.33fF
+C11 in vss 842.06fF
+.ends
+

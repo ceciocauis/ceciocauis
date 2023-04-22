@@ -1,0 +1,123 @@
+* NGSPICE file created from Padtest.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_generic_m5_SYR7BF m5_n1000000_200# m5_n1000000_n257# m5_n1000000_n200#
++ SUB
+R0 m5_n1000000_n257# m5_n1000000_200# sky130_fd_pr__res_generic_m5 w=10k w=2
+C0 m5_n1000000_n257# SUB 406.53fF
+C1 m5_n1000000_n200# SUB 126.56fF
+C2 m5_n1000000_200# SUB 406.53fF
+.ends
+
+.subckt SigPad_3x4_12di vdd vss in
+D0 in vdd sky130_fd_pr__diode_pd2nw_05v5 pj=1.4e+07 area=1.2e+13
+D1 vss in sky130_fd_pr__diode_pw2nd_05v5 pj=1.4e+07 area=1.2e+13
+D2 vss in sky130_fd_pr__diode_pw2nd_05v5 pj=1.4e+07 area=1.2e+13
+D3 vss in sky130_fd_pr__diode_pw2nd_05v5 pj=1.4e+07 area=1.2e+13
+D4 vss in sky130_fd_pr__diode_pw2nd_05v5 pj=1.4e+07 area=1.2e+13
+D5 vss in sky130_fd_pr__diode_pw2nd_05v5 pj=1.4e+07 area=1.2e+13
+D6 in vdd sky130_fd_pr__diode_pd2nw_05v5 pj=1.4e+07 area=1.2e+13
+D7 vss in sky130_fd_pr__diode_pw2nd_05v5 pj=1.4e+07 area=1.2e+13
+D8 in vdd sky130_fd_pr__diode_pd2nw_05v5 pj=1.4e+07 area=1.2e+13
+D9 in vdd sky130_fd_pr__diode_pd2nw_05v5 pj=1.4e+07 area=1.2e+13
+D10 in vdd sky130_fd_pr__diode_pd2nw_05v5 pj=1.4e+07 area=1.2e+13
+D11 in vdd sky130_fd_pr__diode_pd2nw_05v5 pj=1.4e+07 area=1.2e+13
+C0 vdd in 595.55fF
+C1 in vss 1030.92fF
+C2 vdd vss 693.37fF
+.ends
+
+.subckt Padtest in out vss vdd
+XR1 in out R1/m5_n1000000_n200# vss sky130_fd_pr__res_generic_m5_SYR7BF
+XSigPad_3x4_12di_0 vdd vss out SigPad_3x4_12di
+R0 out.t0 out 0.454
+R1 out.t3 out.t2 0.035
+R2 out.t0 out.t3 0.022
+R3 out.t2 out.t1 0.022
+R4 out out.t0 0.005
+R5 vdd.n18 vdd 0.216
+R6 vdd.n13 vdd 0.094
+R7 vdd.n6 vdd.n5 0.085
+R8 vdd.n11 vdd 0.041
+R9 vdd.n11 vdd 0.012
+R10 vdd.n2 vdd.n0 0.01
+R11 vdd.n18 vdd.n17 0.01
+R12 vdd vdd.n18 0.009
+R13 vdd.n13 vdd 0.009
+R14 vdd.n16 vdd.n15 0.008
+R15 vdd.n18 vdd.n12 0.007
+R16 vdd.n12 vdd.n11 0.007
+R17 vdd.n17 vdd.n16 0.006
+R18 vdd.n14 vdd.n13 0.005
+R19 vdd.n17 vdd.n14 0.005
+R20 vdd.n11 vdd.n10 0.004
+R21 vdd.n7 vdd.n6 0.002
+R22 vdd.n12 vdd.n2 0.002
+R23 vdd.n9 vdd.n8 0.002
+R24 vdd.n11 vdd.n9 0.001
+R25 vdd.n6 vdd.n4 0.001
+R26 vdd.n8 vdd.n7 0.001
+R27 vdd.n2 vdd.n1 0.001
+R28 vdd.n4 vdd.n3 0.001
+R29 vss.n10 vss.n9 8.61
+R30 vss.n11 vss.n10 1.266
+R31 vss.n7 vss.n5 1.09
+R32 vss.n8 vss.n4 0.858
+R33 vss.n12 vss.n8 0.762
+R34 vss.n12 vss.n2 0.566
+R35 vss.n22 vss.n16 0.445
+R36 vss.n7 vss.n6 0.398
+R37 vss.n20 vss.n19 0.259
+R38 vss.n8 vss.n7 0.219
+R39 vss vss.n26 0.216
+R40 vss.n0 vss 0.094
+R41 vss.n19 vss.n18 0.077
+R42 vss.n22 vss.n21 0.067
+R43 vss.n12 vss.n11 0.047
+R44 vss.n23 vss 0.041
+R45 vss.n23 vss 0.012
+R46 vss.n26 vss.n25 0.01
+R47 vss.n26 vss 0.009
+R48 vss.n0 vss 0.009
+R49 vss.n12 vss.n3 0.009
+R50 vss.n14 vss.n1 0.008
+R51 vss.n14 vss.n13 0.008
+R52 vss.n24 vss.n23 0.006
+R53 vss.n15 vss.n14 0.006
+R54 vss.n26 vss.n15 0.004
+R55 vss.n25 vss.n24 0.003
+R56 vss.n1 vss.n0 0.002
+R57 vss.n20 vss.n17 0.001
+R58 vss.n23 vss.n22 0.001
+R59 vss.n21 vss.n20 0.001
+R60 vss.n13 vss.n12 0.001
+C0 in out 1.47fF
+C1 vdd R1/m5_n1000000_n200# 12.62fF
+C2 vdd out -1.71fF
+C3 vdd in 13.34fF
+C4 out R1/m5_n1000000_n200# 2.13fF
+C5 vdd.n0 vss 18.28fF $ **FLOATING
+C6 vdd.n1 vss 26.68fF $ **FLOATING
+C7 vdd.n2 vss 11.84fF $ **FLOATING
+C8 vdd.n3 vss 17.20fF $ **FLOATING
+C9 vdd.n4 vss 36.14fF $ **FLOATING
+C10 vdd.n5 vss 15.21fF $ **FLOATING
+C11 vdd.n6 vss 35.88fF $ **FLOATING
+C12 vdd.n7 vss 13.37fF $ **FLOATING
+C13 vdd.n8 vss 152.74fF $ **FLOATING
+C14 vdd.n9 vss 2.40fF $ **FLOATING
+C15 vdd.n10 vss 51.74fF $ **FLOATING
+C16 vdd.n11 vss 946.95fF $ **FLOATING
+C17 vdd.n13 vss 23.41fF $ **FLOATING
+C18 vdd.n15 vss 11.15fF $ **FLOATING
+C19 vdd.n17 vss 39.09fF $ **FLOATING
+C20 vdd.n18 vss 35.53fF $ **FLOATING
+C21 out.t1 vss 186.65fF
+C22 out.t2 vss 515.24fF
+C23 out.t3 vss 525.09fF
+C24 out.t0 vss 727.07fF
+C25 out vss 1489.78fF
+C26 vdd vss 568.92fF
+C27 R1/m5_n1000000_n200# vss 139.33fF
+C28 in vss 842.06fF
+.ends
+

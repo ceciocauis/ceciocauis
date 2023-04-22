@@ -1,0 +1,29 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1679092165
+<< metal2 >>
+rect 2000 -16600 17000 -16400
+<< metal4 >>
+rect 16800 3800 17000 22000
+rect 16800 -14800 17000 3400
+<< metal5 >>
+rect 3700 -10200 3900 17600
+use sky130_fd_pr__res_generic_m5_SYR7BF  R1
+timestamp 1675091164
+transform 0 -1 4143 1 0 2000
+box -1000000 -257 1000000 257
+use SigPad_9x10_6di  SigPad_9x10_6di_0
+timestamp 1679065267
+transform 1 0 -34000 0 1 -38000
+box 36000 20000 51000 60000
+<< labels >>
+flabel metal2 2000 -16600 17000 -16400 0 FreeSans 8000 270 0 0 out
+port 1 nsew
+flabel metal5 3700 -10200 3900 17600 0 FreeSans 9600 270 0 0 in
+port 0 nsew
+flabel metal4 16800 -14800 17000 3400 0 FreeMono 16000 270 0 0 vdd
+port 3 nsew
+flabel metal4 16800 3800 17000 22000 0 FreeMono 16000 270 0 0 vss
+port 2 nsew
+<< end >>
