@@ -26,3 +26,23 @@ Each cell folder contains the following files:
 - Extracted Spice model (`.spice`)
 - LIB (`.lib`)
 - Timing data (`.txt`)
+
+
+
+
+### I/O Cells
+
+Student: Jhon Pinto
+
+Three main I/O cells were desiged using the [Sky130 PDK:](https://skywater-pdk.readthedocs.io/en/main/) an analog signal pad cell, filler cell, and cut-off cell and can be found in the folder [IO-cells](https://github.com/ceciocauis/ceciocauis/tree/main/IO-cells). These designes are stored in the following files:
+
+- [cst](https://github.com/ceciocauis/ceciocauis/tree/main/IO-cells/cst): Designs created on the simulation software **[CST Studio Suite software](https://www.3ds.com/es/productos-y-servicios/simulia/productos/cst-studio-suite/)**
+- [mag](https://github.com/ceciocauis/ceciocauis/tree/main/IO-cells/mag): Designs created on the VLSI layout tool **[Magic](http://opencircuitdesign.com/magic/)**
+- [ngspice](https://github.com/ceciocauis/ceciocauis/tree/main/IO-cells/ngspice): Parasitic extraction files and testbench files runned on the spice simulator **[Ngspice](https://ngspice.sourceforge.io/)**
+- [xschem](https://github.com/ceciocauis/ceciocauis/tree/main/IO-cells/xschem): Schematics of the designs created on the capture program **[Xschem](https://xschem.sourceforge.io/stefan/index.html)**
+
+Follows the naming convenction for the signal pad cell desings:
+
+<aside>
+📄 Sigpad_[”in”NodeSize]_[NumberOfDiodes]
+</aside>
