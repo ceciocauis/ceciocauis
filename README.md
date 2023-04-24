@@ -6,8 +6,7 @@ This project was developed by the students **Jhon Pinto** and **Nelson Rodriguez
 > The detailed documentation of this project could be read here [paper]
 
 ### Standard Cell Library
-Student: Nelson Rodriguez
-
+Student: Nelson Rodriguez  
 Ten standard cells were designed and characterized using the [Sky130 PDK](https://skywater-pdk.readthedocs.io/en/main/) and are saved in the folder [standard-cells](./standard-cells/).
 1. [INV](./standard-cells/01-inv/)
 2. [BUFF](./standard-cells/02-buff/)
@@ -27,8 +26,12 @@ Each cell folder contains the following files:
 - LIB (`.lib`)
 - Timing data (`.txt`)
 
-
-
+Where developed a set of script during the design process and for the cell characterization:  
+1. [DSCC](./standard-cells/scripts/dscc/) : Digital Standard Cell Characterization tool.
+2. [Fo4](./standard-cells/scripts/fo4/) : Data and post-processing script for the Fo4 testbench.
+3. [Grid Template](./standard-cells/scripts/grid-template/) : Script to create custom height grids for layout implementation.
+4. [Inverter Chain](./standard-cells/scripts/inverter-chain/) : Data and post-processing scripts for the inverter chain testbench.
+5. [Results](./standard-cells/scripts/results/) : Data and testbench for timing measurements of the inverter design with optimal widths obtained.  
 
 ### I/O Cells
 
