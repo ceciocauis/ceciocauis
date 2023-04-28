@@ -3,7 +3,7 @@
 This repository contains the files of the project *Open-Source Standard Cell and I/O Cell Design*.  
 This project was developed by the students **Jhon Pinto** and **Nelson Rodriguez** with the direction of professors **Sebastian Moya** and **Jaime Barrero** at the [**Industrial University of Santander**](https://uis.edu.co/en/)
 
-> The detailed documentation of this project could be read here [paper]
+> The detailed documentation of this project could be read [here](./CD.2022si.CECIOCA_Trabajo_Grado.pdf).  
 
 ### Standard Cell Library  
 
